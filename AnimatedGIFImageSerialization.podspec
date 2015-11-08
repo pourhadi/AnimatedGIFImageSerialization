@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/mattt/AnimatedGIFImageSerialization.git', :tag => '0.2.0' }
   s.source_files = 'AnimatedGIFImageSerialization'
   s.requires_arc = true
-
+  s.tvos.deployment_target = '9.0'
   s.ios.frameworks = "MobileCoreServices", "ImageIO", "CoreGraphics"
   s.ios.deployment_target = '5.0'
 end
